@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Through the curtain</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=EB+Garamond:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body><main>
+  <section id="carriage" class="carriage" aria-label="Vintage train carriage">
+    <span class="light-layer morning-light" aria-hidden="true"></span>
+    <span class="light-layer sunset-light" aria-hidden="true"></span>
+    <span class="light-layer night-light" aria-hidden="true"></span>
+    <span class="interior-dimmer" aria-hidden="true"></span>
+    <div id="window" class="window" aria-label="Interactive landscape screen">
+      <div class="screen-viewport">
+        <img id="landscape" src="assets/grassland-night.png" alt="Moonlit grassland on the carriage screen">
+        <div class="glass" aria-hidden="true"></div>
+      </div>
+      <button id="curtain" class="curtain closed" aria-describedby="status"><span class="fabric"></span><span class="prompt">draw curtain</span></button>
+    </div>
+  </section>
+  <p id="caption" class="caption" aria-live="polite"></p>
+  <p id="intro-caption" class="intro-caption" aria-hidden="true">Pull the curtain open, and let the journey begin.</p>
+  <div class="bottom-controls">
+    <div class="dots" aria-label="Scene 3 of 3"><i></i><i></i><i class="active"></i></div>
+    <div class="audio-controls">
+      <label class="volume-control" for="train-volume"><span>volume</span><input id="train-volume" type="range" min="0" max="100" value="50" aria-label="Train sound volume"></label>
+      <button id="train-sound" aria-pressed="true">train sound on</button>
+      <button id="carriage-light" class="carriage-light" aria-pressed="true" aria-label="Carriage lights on" title="Carriage lights on"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 18h6M10 21h4M8.1 14.2a6.5 6.5 0 1 1 7.8 0c-.9.7-1.4 1.7-1.4 2.8H9.5c0-1.1-.5-2.1-1.4-2.8Z"/></svg></button>
+    </div>
+  </div>
+  <audio id="train-audio" src="kokoreli777-inside-old-train-169418.mp3" autoplay loop preload="auto"></audio>
+  <p id="status" class="sr-only" aria-live="polite">Curtain closed. Open it to begin.</p>
+</main><script src="script.js"></script></body></html>
