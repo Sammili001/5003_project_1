@@ -2,6 +2,8 @@
 
 **Author: Sammi**
 
+**Live webpage:** [https://sammili001.github.io/5003_project_1/](https://sammili001.github.io/5003_project_1/)
+
 ## Project description
 
 Through the Curtain is a small, single-page browser experience set inside a nostalgic vintage train carriage. The user opens and closes a warm brown curtain to reveal three realistic, AI-generated landscapes at different times of day. Each scene combines imagery, a gradual change in carriage lighting, a short piano phrase, and a subtle poetic caption to create a quiet feeling of travel.
